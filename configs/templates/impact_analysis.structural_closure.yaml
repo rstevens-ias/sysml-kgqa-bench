@@ -1,0 +1,27 @@
+template_id: impact_analysis.structural_closure
+description: All elements structurally affected by a block or property (T3).
+task_class: impact_analysis
+guarantee: completeness
+graph_version: v2
+domain_type_roles:
+- Block
+- ValueProperty
+- PartProperty
+exclude_deprecated: true
+free_vars:
+- X
+canonical_nl: Which elements are structurally affected if {X.name} changes?
+canonical_nl_by_seed_type:
+  Block: Which elements are affected if the definition of block {X.name} changes?
+  ValueProperty: Which elements need to be checked if the parameter {X.name} changes?
+  PartProperty: Which elements are affected if the part {X.name} is changed or replaced?
+validity:
+  reject_if:
+  - closure_size == 0
+  - closure_size > 500
+target_count: 225
+target_stratify_by: seed_type
+target_seed_type_counts:
+  Block: 100
+  ValueProperty: 100
+  PartProperty: 25

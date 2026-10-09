@@ -1,0 +1,39 @@
+template_id: negation.requirement_unrefined
+description: Requirements in a refinement cluster that no other requirement refines (T2).
+task_class: negation
+guarantee: exactness
+graph_version: v2
+domain_type_role: Requirement
+derived_from:
+  type: TMT Requirement
+  relation: Refines
+  direction: incoming
+exclude_deprecated: true
+free_vars:
+- component_id
+canonical_nl: Within the requirement-refinement cluster anchored by {cluster_anchor_name}, which requirements are
+  not refined by any other requirement in that cluster?
+gold_query: |
+  MATCH (t:Entity)
+  WHERE 'TMT Requirement' IN t.node_types
+    AND NOT 'deprecated' IN t.node_types
+    AND NOT 'deprecated_by_container_name' IN t.node_types
+    AND NOT 'deleted_by_text_marker' IN t.node_types
+    AND NOT 'non_normative_annotation' IN t.node_types
+    AND t.id IN $member_ids
+    AND NOT EXISTS {
+      MATCH (t)-[r:Relation {relation: 'Refines'}]->(u:Entity)
+      WHERE NOT 'deprecated' IN u.node_types
+        AND NOT 'deprecated_by_container_name' IN u.node_types
+        AND NOT 'deleted_by_text_marker' IN u.node_types
+        AND NOT 'non_normative_annotation' IN u.node_types
+    }
+  RETURN t.id AS id, t.name AS name
+validity:
+  reject_if:
+  - answer_size == 0
+  - answer_size == domain_size
+  - answer_size > 500
+  - domain_size > 0 and answer_size / domain_size > 0.6
+target_count: 48
+target_stratify_by: null

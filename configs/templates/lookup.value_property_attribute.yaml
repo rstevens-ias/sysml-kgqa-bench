@@ -1,0 +1,16 @@
+template_id: lookup.value_property_attribute
+description: The default value of a value property (T7).
+task_class: lookup
+guarantee: exactness
+graph_version: v2
+domain_type_role: ValueProperty
+free_vars:
+- X
+canonical_nl: What is the default value of the value property named {name}, owned by {owning_block_name}?
+gold_query: |
+  MATCH (n:Entity {id: '<X>'}) RETURN n.default_value AS default_value
+validity:
+  reject_if:
+  - name and owning block both collide between two distinct elements (residual_ambiguity)
+target_count: 127
+target_stratify_by: null

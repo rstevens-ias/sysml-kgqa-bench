@@ -1,0 +1,25 @@
+template_id: aggregation.requirement_count
+description: Number of active requirements within a package or document section (T4).
+task_class: aggregation
+guarantee: exactness
+graph_version: v2
+domain_type_role: Requirement
+scope_unit_types:
+- package
+- header
+exclude_deprecated: true
+free_vars:
+- scope
+canonical_nl: How many active (non-deprecated) requirements are documented in {scope_name}?
+canonical_nl_by_scope_unit_type:
+  package: How many active (non-deprecated) requirements are documented in the {scope_name} package?
+  header: How many active (non-deprecated) requirements are documented in the "{scope_name}" section?
+validity:
+  reject_if:
+  - strict_count == 0
+  - strict_count >= 0.6 * requirement_domain_size
+target_count: 180
+target_stratify_by: scope_unit_type
+target_scope_type_counts:
+  package: 19
+  header: 161

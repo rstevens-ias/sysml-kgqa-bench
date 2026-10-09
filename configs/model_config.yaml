@@ -1,0 +1,40 @@
+# Model-specific settings for the TMT SysML model.
+model_id: TMT-SysML-Model
+graph_version: v2
+
+# Maps the generic type roles used in the templates to stereotypes of this model.
+type_roles:
+  Requirement: TMT Requirement
+
+# Elements carrying any of these stereotypes are excluded from answer sets.
+deprecated_stereotypes:
+  - deprecated
+  - deprecated_by_container_name
+  - deleted_by_text_marker
+  - non_normative_annotation
+
+always_exclude_stereotypes:
+  - deleted_by_text_marker
+  - non_normative_annotation
+
+retired_but_real_stereotypes:
+  - deprecated
+  - deprecated_by_container_name
+
+# Trace relations and their downstream direction (forward: client -> supplier).
+trace_relations:
+  Refines: forward
+  Refine: forward
+  Specifies: reverse
+  Abstraction: reverse
+  Allocate: forward
+
+structural_relations:
+  has_property:
+    direction: bidirectional
+  hasParent_structural:
+    direction: reverse
+  typedBy:
+    direction: reverse
+  connects_to:
+    direction: bidirectional

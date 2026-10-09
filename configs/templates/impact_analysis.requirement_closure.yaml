@@ -1,0 +1,20 @@
+template_id: impact_analysis.requirement_closure
+description: All elements downstream of a requirement along trace relations (T1).
+task_class: impact_analysis
+guarantee: completeness
+graph_version: v2
+domain_type_role: Requirement
+exclude_deprecated: true
+free_vars:
+- X
+canonical_nl: Which elements are affected if requirement {X.name} changes?
+validity:
+  reject_if:
+  - closure_size == 0
+  - closure_size > 500
+target_count: 203
+target_stratify_by: difficulty_band
+target_band_counts:
+  trivial: 60
+  small: 93
+  medium: 50

@@ -1,0 +1,19 @@
+template_id: rationale_abstention
+description: The recorded rationale of a requirement, or abstention if none exists (T6).
+task_class: rationale_abstention
+guarantee: abstention
+graph_version: v2
+domain_type_role: Requirement
+free_vars:
+- X
+canonical_nl: What is the stated rationale behind {name}?
+gold_query: |
+  MATCH (n:Entity {id: '<X>'}) RETURN n.rationale AS rationale
+validity:
+  reject_if:
+  - rationale is a degenerate stub (e.g. 'TBD', 'N/A') or shorter than 5 characters
+target_count: 150
+target_stratify_by: answerable
+target_answerable_counts:
+  'true': 75
+  'false': 75
