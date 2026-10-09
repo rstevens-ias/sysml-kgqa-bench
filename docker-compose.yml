@@ -1,0 +1,15 @@
+services:
+  sysml-kgqa-bench:
+    build: .
+    image: sysml-kgqa-bench:latest
+    volumes:
+      - ./:/workspace
+    tty: true
+    # Uncomment for GPU support (requires the NVIDIA container toolkit and a CUDA image, see Dockerfile).
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
