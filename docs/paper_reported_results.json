@@ -1,0 +1,386 @@
+{
+  "closed_book/aggregation.requirement_count/primary": {
+    "method": "clopper_pearson",
+    "n": 358,
+    "tolerance": 0.0103,
+    "value": 0.0
+  },
+  "closed_book/impact_analysis.requirement_closure/faithfulness": {
+    "method": "fixed_tolerance",
+    "n": 406,
+    "tolerance": 0.03,
+    "value": 1.0
+  },
+  "closed_book/impact_analysis.requirement_closure/primary": {
+    "method": "fixed_tolerance",
+    "n": 406,
+    "tolerance": 0.03,
+    "value": 0.0
+  },
+  "closed_book/impact_analysis.requirement_closure/self_inclusion": {
+    "method": "clopper_pearson",
+    "n": 406,
+    "tolerance": 0.009,
+    "value": 0.0
+  },
+  "closed_book/impact_analysis.requirement_closure/stopped_early": {
+    "method": "clopper_pearson",
+    "n": 406,
+    "tolerance": 0.0313,
+    "value": 0.0837
+  },
+  "closed_book/impact_analysis.structural_closure/faithfulness": {
+    "method": "fixed_tolerance",
+    "n": 450,
+    "tolerance": 0.03,
+    "value": 0.9978
+  },
+  "closed_book/impact_analysis.structural_closure/primary": {
+    "method": "fixed_tolerance",
+    "n": 450,
+    "tolerance": 0.03,
+    "value": 0.0011
+  },
+  "closed_book/impact_analysis.structural_closure/self_inclusion": {
+    "method": "clopper_pearson",
+    "n": 450,
+    "tolerance": 0.0127,
+    "value": 0.0067
+  },
+  "closed_book/impact_analysis.structural_closure/stopped_early": {
+    "method": "clopper_pearson",
+    "n": 450,
+    "tolerance": 0.0469,
+    "value": 0.3956
+  },
+  "closed_book/lookup.value_property_attribute/primary": {
+    "method": "clopper_pearson",
+    "n": 254,
+    "tolerance": 0.0144,
+    "value": 0.0
+  },
+  "closed_book/negation.requirement_unrefined/primary": {
+    "method": "clopper_pearson",
+    "n": 96,
+    "tolerance": 0.0377,
+    "value": 0.0
+  },
+  "closed_book/rationale_abstention/abstention_accuracy": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0567,
+    "value": 0.34
+  },
+  "closed_book/rationale_abstention/lasm_accuracy": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0122,
+    "value": 0.0
+  },
+  "closed_book/rationale_abstention/primary": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0474,
+    "value": 0.17
+  },
+  "closed_book/tracing.requirement_derivation/edge_existence": {
+    "method": "clopper_pearson",
+    "n": 400,
+    "tolerance": 0.0092,
+    "value": 0.0
+  },
+  "closed_book/tracing.requirement_derivation/primary": {
+    "method": "clopper_pearson",
+    "n": 400,
+    "tolerance": 0.0092,
+    "value": 0.0
+  },
+  "gretriever/aggregation.requirement_count/primary": {
+    "method": "clopper_pearson",
+    "n": 358,
+    "tolerance": 0.0421,
+    "value": 0.1592
+  },
+  "gretriever/impact_analysis.requirement_closure/faithfulness": {
+    "method": "fixed_tolerance",
+    "n": 406,
+    "tolerance": 0.03,
+    "value": 0.7901
+  },
+  "gretriever/impact_analysis.requirement_closure/primary": {
+    "method": "fixed_tolerance",
+    "n": 406,
+    "tolerance": 0.03,
+    "value": 0.7274
+  },
+  "gretriever/impact_analysis.requirement_closure/self_inclusion": {
+    "method": "clopper_pearson",
+    "n": 406,
+    "tolerance": 0.0284,
+    "value": 0.064
+  },
+  "gretriever/impact_analysis.requirement_closure/stopped_early": {
+    "method": "clopper_pearson",
+    "n": 406,
+    "tolerance": 0.0128,
+    "value": 0.0049
+  },
+  "gretriever/impact_analysis.structural_closure/faithfulness": {
+    "method": "fixed_tolerance",
+    "n": 449,
+    "tolerance": 0.03,
+    "value": 0.3249
+  },
+  "gretriever/impact_analysis.structural_closure/primary": {
+    "method": "fixed_tolerance",
+    "n": 449,
+    "tolerance": 0.03,
+    "value": 0.2283
+  },
+  "gretriever/impact_analysis.structural_closure/self_inclusion": {
+    "method": "clopper_pearson",
+    "n": 449,
+    "tolerance": 0.0473,
+    "value": 0.5145
+  },
+  "gretriever/impact_analysis.structural_closure/stopped_early": {
+    "method": "clopper_pearson",
+    "n": 449,
+    "tolerance": 0.0388,
+    "value": 0.1804
+  },
+  "gretriever/lookup.value_property_attribute/primary": {
+    "method": "clopper_pearson",
+    "n": 254,
+    "tolerance": 0.0428,
+    "value": 0.9055
+  },
+  "gretriever/negation.requirement_unrefined/primary": {
+    "method": "clopper_pearson",
+    "n": 96,
+    "tolerance": 0.0979,
+    "value": 0.2396
+  },
+  "gretriever/rationale_abstention/abstention_accuracy": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0271,
+    "value": 0.9667
+  },
+  "gretriever/rationale_abstention/lasm_accuracy": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0377,
+    "value": 0.9133
+  },
+  "gretriever/rationale_abstention/primary": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0332,
+    "value": 0.94
+  },
+  "gretriever/tracing.requirement_derivation/edge_existence": {
+    "method": "clopper_pearson",
+    "n": 400,
+    "tolerance": 0.0481,
+    "value": 0.7136
+  },
+  "gretriever/tracing.requirement_derivation/primary": {
+    "method": "clopper_pearson",
+    "n": 400,
+    "tolerance": 0.0488,
+    "value": 0.6575
+  },
+  "oracle/aggregation.requirement_count/primary": {
+    "method": "clopper_pearson",
+    "n": 358,
+    "tolerance": 0.0103,
+    "value": 1.0
+  },
+  "oracle/impact_analysis.requirement_closure/faithfulness": {
+    "method": "fixed_tolerance",
+    "n": 406,
+    "tolerance": 0.03,
+    "value": 1.0
+  },
+  "oracle/impact_analysis.requirement_closure/primary": {
+    "method": "fixed_tolerance",
+    "n": 406,
+    "tolerance": 0.03,
+    "value": 1.0
+  },
+  "oracle/impact_analysis.requirement_closure/self_inclusion": {
+    "method": "clopper_pearson",
+    "n": 406,
+    "tolerance": 0.009,
+    "value": 0.0
+  },
+  "oracle/impact_analysis.requirement_closure/stopped_early": {
+    "method": "clopper_pearson",
+    "n": 406,
+    "tolerance": 0.009,
+    "value": 0.0
+  },
+  "oracle/impact_analysis.structural_closure/faithfulness": {
+    "method": "fixed_tolerance",
+    "n": 450,
+    "tolerance": 0.03,
+    "value": 1.0
+  },
+  "oracle/impact_analysis.structural_closure/primary": {
+    "method": "fixed_tolerance",
+    "n": 450,
+    "tolerance": 0.03,
+    "value": 0.7858
+  },
+  "oracle/impact_analysis.structural_closure/self_inclusion": {
+    "method": "clopper_pearson",
+    "n": 450,
+    "tolerance": 0.0456,
+    "value": 0.3311
+  },
+  "oracle/impact_analysis.structural_closure/stopped_early": {
+    "method": "clopper_pearson",
+    "n": 450,
+    "tolerance": 0.0375,
+    "value": 0.1644
+  },
+  "oracle/lookup.value_property_attribute/primary": {
+    "method": "clopper_pearson",
+    "n": 254,
+    "tolerance": 0.0271,
+    "value": 0.9764
+  },
+  "oracle/negation.requirement_unrefined/primary": {
+    "method": "clopper_pearson",
+    "n": 96,
+    "tolerance": 0.1051,
+    "value": 0.5938
+  },
+  "oracle/rationale_abstention/abstention_accuracy": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0122,
+    "value": 1.0
+  },
+  "oracle/rationale_abstention/lasm_accuracy": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0252,
+    "value": 0.9733
+  },
+  "oracle/rationale_abstention/primary": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0205,
+    "value": 0.9867
+  },
+  "oracle/tracing.requirement_derivation/edge_existence": {
+    "method": "clopper_pearson",
+    "n": 400,
+    "tolerance": 0.0113,
+    "value": 0.9975
+  },
+  "oracle/tracing.requirement_derivation/primary": {
+    "method": "clopper_pearson",
+    "n": 400,
+    "tolerance": 0.0113,
+    "value": 0.9975
+  },
+  "text_to_cypher/aggregation.requirement_count/primary": {
+    "method": "clopper_pearson",
+    "n": 358,
+    "tolerance": 0.0441,
+    "value": 0.1844
+  },
+  "text_to_cypher/impact_analysis.requirement_closure/faithfulness": {
+    "method": "fixed_tolerance",
+    "n": 400,
+    "tolerance": 0.03,
+    "value": 0.9541
+  },
+  "text_to_cypher/impact_analysis.requirement_closure/primary": {
+    "method": "fixed_tolerance",
+    "n": 400,
+    "tolerance": 0.03,
+    "value": 0.8068
+  },
+  "text_to_cypher/impact_analysis.requirement_closure/self_inclusion": {
+    "method": "clopper_pearson",
+    "n": 400,
+    "tolerance": 0.0092,
+    "value": 0.0
+  },
+  "text_to_cypher/impact_analysis.requirement_closure/stopped_early": {
+    "method": "clopper_pearson",
+    "n": 400,
+    "tolerance": 0.0154,
+    "value": 0.01
+  },
+  "text_to_cypher/impact_analysis.structural_closure/faithfulness": {
+    "method": "fixed_tolerance",
+    "n": 416,
+    "tolerance": 0.03,
+    "value": 0.6249
+  },
+  "text_to_cypher/impact_analysis.structural_closure/primary": {
+    "method": "fixed_tolerance",
+    "n": 416,
+    "tolerance": 0.03,
+    "value": 0.1223
+  },
+  "text_to_cypher/impact_analysis.structural_closure/self_inclusion": {
+    "method": "clopper_pearson",
+    "n": 416,
+    "tolerance": 0.0306,
+    "value": 0.0817
+  },
+  "text_to_cypher/impact_analysis.structural_closure/stopped_early": {
+    "method": "clopper_pearson",
+    "n": 416,
+    "tolerance": 0.046,
+    "value": 0.2837
+  },
+  "text_to_cypher/lookup.value_property_attribute/primary": {
+    "method": "clopper_pearson",
+    "n": 254,
+    "tolerance": 0.0503,
+    "value": 0.8465
+  },
+  "text_to_cypher/negation.requirement_unrefined/primary": {
+    "method": "clopper_pearson",
+    "n": 96,
+    "tolerance": 0.1027,
+    "value": 0.3125
+  },
+  "text_to_cypher/rationale_abstention/abstention_accuracy": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0122,
+    "value": 1.0
+  },
+  "text_to_cypher/rationale_abstention/lasm_accuracy": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0122,
+    "value": 1.0
+  },
+  "text_to_cypher/rationale_abstention/primary": {
+    "method": "clopper_pearson",
+    "n": 300,
+    "tolerance": 0.0122,
+    "value": 1.0
+  },
+  "text_to_cypher/tracing.requirement_derivation/edge_existence": {
+    "method": "clopper_pearson",
+    "n": 399,
+    "tolerance": 0.0502,
+    "value": 0.5739
+  },
+  "text_to_cypher/tracing.requirement_derivation/primary": {
+    "method": "clopper_pearson",
+    "n": 399,
+    "tolerance": 0.0502,
+    "value": 0.5764
+  }
+}
