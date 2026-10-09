@@ -1,0 +1,40 @@
+{
+  "title": "Same Graph, Opposite Criteria: Per-Class Correctness Guarantees for Closed-World KGQA",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Stevens, Robin",
+      "affiliation": "University of Stuttgart, Institute for Industrial Automation and Software Engineering",
+      "orcid": "0000-0000-0000-0000"
+    },
+    {
+      "name": "Baum, Sebastian",
+      "affiliation": "University of Stuttgart, Institute for Industrial Automation and Software Engineering",
+      "orcid": "0000-0000-0000-0000"
+    },
+    {
+      "name": "Jazdi, Nasser",
+      "affiliation": "University of Stuttgart, Institute for Industrial Automation and Software Engineering",
+      "orcid": "0000-0000-0000-0000"
+    },
+    {
+      "name": "Weyrich, Michael",
+      "affiliation": "University of Stuttgart, Institute for Industrial Automation and Software Engineering",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "description": "This dataset contains the benchmark of our extended abstract paper, containing a knowledge graph derived from the TMT SysML model together with question and answer pairs.",
+  "keywords": [
+    "benchmark",
+    "KGQA",
+    "dataset",
+    "SysML"
+  ],
+  "communities": [
+    {
+      "identifier": "zenodo"
+    }
+  ]
+}

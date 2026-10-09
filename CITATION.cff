@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the paper below."
+title: "Same Graph, Opposite Criteria: Per-Class Correctness Guarantees for Closed-World KGQA"
+type: software
+authors:
+  - family-names: Stevens
+    given-names: Robin
+    orcid: 0009-0008-5121-972X
+  - family-names: Baum
+    given-names: Sebastian
+    orcid: 0000-0003-4925-7248
+  - family-names: Jazdi
+    given-names: Nasser
+    orcid: 0000-0003-4925-7248
+  - family-names: Weyrich
+    given-names: Michael
+    orcid: 0000-0003-4925-7248
+version: "1.0.0"
+license: MIT
+preferred-citation:
+  type: conference-paper-extended-abstract
+  title: "Same Graph, Opposite Criteria: Per-Class Correctness Guarantees for Closed-World KGQA"
+  authors:
+    - name-particle: "TODO: fill in author list before release"
+  conference:
+    name: "Learning on Graphs Conference (LoG)"
+  year: 2026
