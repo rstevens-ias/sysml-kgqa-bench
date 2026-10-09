@@ -1,0 +1,19 @@
+# Data is downloaded from Zenodo or regenerated (see data/README.md)
+data/*
+!data/README.md
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
